@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цифровая Библиотека</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/shortcard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <!-- Header nav -->
+            <div class="header-nav">
+                <a href="#!" class="logo">Digit|Libr</a>
+
+                <nav id="nav" class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
+                        <li class="nav-item"><a href="library.html" class="nav-link active">Библиотека</a></li>
+                        <li class="nav-item"><a href="userlibrary.html" class="nav-link">Мои книги</a></li>
+                        <li class="nav-item"><a id="login_field" class="nav-link"></a></li>
+                        <li class="nav-item"><a id="sign_btn" href="auth.html" class="nav-link">Войти</a></li>
+                    </ul>
+                    <button id="nav-btn" class="nav-button">
+                        <img id="nav-btn-img" src="./img/icons/nav-open.svg" alt="Nav button">
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="card-container">
+      <ul class="book-cards">
+        
+      </ul>
+    </div>
+    <script src="./js/createritem.js"></script>
+    <script type="module" src="./js/librbooks.js"></script>
+</body>
