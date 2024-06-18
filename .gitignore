@@ -1,13 +1,3 @@
-
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
 # Created by https://www.toptal.com/developers/gitignore/api/intellij+all,visualstudio,visualstudiocode,cmake,c,c++
 # Edit at https://www.toptal.com/developers/gitignore?templates=intellij+all,visualstudio,visualstudiocode,cmake,c,c++
 
@@ -29,11 +19,6 @@
 # Precompiled Headers
 *.gch
 *.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
 
 # Libraries
 *.lib
@@ -90,16 +75,6 @@ dkms.conf
 
 # Compiled Static libraries
 *.lai
-
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
 
 # Executables
 
