@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цифровая Библиотека</title>
+	<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="./css/auth.css">
+</head>
+<body>
+<div class="container">
+	<div class="screen">
+		<div class="screen__content">
+			<form class="login">
+				<div>
+					<p class="error_message" id="error-message">Такой пользователь уже существует!</p>
+				</div>
+				<div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input type="text" class="login__input" id="logfield" placeholder="Логин">
+				</div>
+				<div class="login__field">
+					<i class="login__icon fas fa-lock"></i>
+					<input type="password" class="login__input" id="pwdfield" placeholder="Пароль">
+				</div>
+                <div class="login__field">
+					<i class="login__icon fas fa-lock"></i>
+					<input type="password" class="login__input" id="pwdfieldrepeat" placeholder="Повторите пароль">
+				</div>
+				<div class="error_rule" id="rule-message">
+					<p>1) Логин не менее 3 и не более 20 символов</p>
+					<p>2) Пароль не менее 8 и не более 16 символов</p>
+					<p>3) Пароль должен содержать хотя бы одну заглавную, строчную букву и цифру</p>
+					<p>4) Запрещены [#, @, ", ', \, /]</p>
+					<p>5) В пароле должны быть только латинские буквы</p>
+				</div>
+			</form>
+			<button class="button login__submit" id="regbutn">
+                <span class="button__text">Зарегистрироваться</span>
+            </button>	
+		</div>
+		<div class="screen__background">
+			<span class="screen__background__shape screen__background__shape4"></span>
+			<span class="screen__background__shape screen__background__shape3"></span>		
+			<span class="screen__background__shape screen__background__shape2"></span>
+			<span class="screen__background__shape screen__background__shape1"></span>
+		</div>		
+	</div>
+</div>
+<script type="module" src="./js/sendregister.js"></script>
+</body>
+</html>

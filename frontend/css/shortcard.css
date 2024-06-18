@@ -1,0 +1,96 @@
+/* Стили для div контейнера */
+div.card-container {
+  padding: 20px; /* Внутренние отступы от границ контейнера */
+  margin: 20px; /* Внешние отступы от других элементов */
+  background-color: #f0f0f0; /* Фон для выделения контейнера */
+  border-radius: 10px; /* Скругленные углы контейнера */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для контейнера */
+}
+
+/* Стили для контейнера ul */
+ul.book-cards {
+  list-style-type: none; /* Убираем маркеры списка */
+  padding: 0;
+  margin: 0;
+}
+
+/* Стили для карточек li */
+ul.book-cards li {
+  background-color: #f9f9f9; /* Цвет фона карточки */
+  border: 1px solid #ddd; /* Граница карточки */
+  border-radius: 10px; /* Скругленные углы */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень */
+  padding: 20px; /* Внутренние отступы */
+  margin-bottom: 20px; /* Пространство между карточками по вертикали */
+  width: 100%; /* Ширина карточки */
+  box-sizing: border-box; /* Учитываем границы и отступы */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Анимация при наведении */
+  display: flex; /* Для размещения изображения и текста в ряд */
+  align-items: flex-start; /* Выровнять элементы по верху */
+}
+
+ul.book-cards li:hover {
+  transform: translateY(-5px); /* Смещение вверх при наведении */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Более интенсивная тень при наведении */
+}
+
+/* Стили для изображения */
+ul.book-cards li img {
+  width: 170px; /* Ширина изображения */
+  height: 256px; /* Высота изображения */
+  margin-right: 20px; /* Отступ справа от изображения */
+  border-radius: 5px; /* Немного скругляем углы изображения */
+}
+
+/* Стили для текста карточки */
+ul.book-cards li .book-info {
+  flex: 1; /* Заполняем оставшееся пространство */
+  display: flex;
+  flex-direction: column; /* Расположить элементы вертикально */
+  justify-content: flex-start; /* Выровнять текст по верху */
+}
+
+/* Заголовок книги */
+ul.book-cards li h2 {
+  font-size: 1.5em; /* Размер шрифта */
+  margin: 0 0 10px 0; /* Отступы */
+  text-align: center; /* Центрирование текста */
+  width: 100%; /* Занять всю ширину */
+}
+
+/* Автор книги */
+ul.book-cards li p.author {
+  font-size: 1.2em; /* Увеличенный размер шрифта */
+  color: #555; /* Цвет текста */
+  margin: 0 0 10px 0; /* Отступы */
+}
+
+/* Описание книги */
+ul.book-cards li p.description {
+  font-size: 0.9em; /* Размер шрифта */
+  color: #777; /* Цвет текста */
+  margin: 0 0 10px 0; /* Отступы */
+}
+
+/* Контейнер для кнопок */
+ul.book-cards li .button-container {
+  display: flex;
+  justify-content: center; /* Центрируем кнопки */
+  gap: 10px; /* Промежуток между кнопками */
+  margin-top: auto; /* Расположить кнопки снизу */
+}
+
+/* Стили для кнопок */
+ul.book-cards li button {
+  padding: 10px 20px; /* Внутренние отступы */
+  background-color: #007BFF; /* Фон кнопки */
+  color: #fff; /* Цвет текста */
+  border: none; /* Убираем границу */
+  border-radius: 5px; /* Скругленные углы */
+  cursor: pointer; /* Курсор указателя */
+  transition: background-color 0.3s ease; /* Плавный переход для фона */
+}
+
+ul.book-cards li button:hover {
+  background-color: #0056b3; /* Фон кнопки при наведении */
+}
